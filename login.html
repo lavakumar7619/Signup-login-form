@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <title>Login</title>
+</head>
+<body>
+    <div class="sconatiner">
+        <div class="swrapper">
+            <div class="login">
+                <div class="title">
+                    <h2>Login</h2>
+                </div>
+                <form >
+                    <div class="inputs">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="inputs">
+                        <label for="password">Password</label>
+                        <div>
+                            <input type="password" name="password" id="password">
+                            <i class="bi-eye" id="togglePassword"></i>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+                <span>----or conncet with----</span>
+                <div class="icons">
+                    <i class="fab fa-microsoft" style="color:red"></i>
+                    <i class="fab fa-facebook" style="color:blue"></i>
+                    <i class="fab fa-google" style="color:red"></i>
+                    <i class="fab fa-linkedin" style="color :blue"></i>
+                </div>
+                <div class="x">
+                    <p>Don't have an Account ? <a href="./index.html">Signup</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function (e) {
+
+            const type = password.getAttribute('type') === 'text' ? 'password' : 'text';
+            password.setAttribute('type', type);
+        });
+
+
+        document.querySelector('button').addEventListener("click",(e)=>{
+            e.preventDefault()
+            console.log('you have pressed login button');
+        })
+    </script>
+</body>
+</html>

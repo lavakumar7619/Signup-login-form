@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(100deg,#65bdeb,#a661ba);
+    font-family: "Poppins",sans-serif;
+    text-transform: capitalize;
+    font-size: 18px;
+    height: 100vh;
+    width: 100%;
+}
+.conatiner{
+   position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 80%;
+}
+.sconatiner{
+   position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    width: 40%;
+}
+.wrapper{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around   
+}
+img{
+    min-width: 350px;
+    border-radius: 25px;
+    margin-right: 25px;
+}
+.title{
+    text-align: center;
+    padding: 2px;
+}
+.inputs{
+    
+    display: flex;
+    flex-direction: column;
+    padding: 0 2px;
+    margin-bottom: 8px;
+}
+input{
+    border: none;
+    border-radius: 8px;
+    background-color: #c6e4f0;
+    padding: 5px 20px;
+}
+
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+button{
+    background-color: blue;
+    border-radius: 10px;
+    border: 1px solid blue;
+    padding: 6px 50px;
+    color: white;
+    font-size: 18px;
+    cursor:pointer;
+}
+.button{
+    text-align: center;
+    margin: 15px;
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+span{
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+}
+.x{
+    text-align: center;
+}
+.swrapper{
+    background-color:white;
+    border-radius: 25px;
+   align-content: center;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+
+
+@media (max-width:640px){
+    .conatiner{
+        min-width: 90%;
+        
+    }
+    img{
+        display: none;
+    }
+
+}
+
+
+@media (max-width:715px){
+    .conatiner{
+        min-width: 60%;
+    }
+     .sconatiner{
+        min-width: 60%;
+    }
+    img{
+        min-width: 250px;
+    }
+}
+@media (max-width:630px){
+    .conatiner{
+        min-width: 40%;
+    }
+    .sconatiner{
+        min-width: 60%;
+    }
+    
+}
+
+
+@media (max-width:430px){
+    .sconatiner{
+        min-width: 90%;
+    }
+}
+@media (max-width:290px){
+    .sconatiner{
+        min-width: 98%;
+        background-color: red
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
